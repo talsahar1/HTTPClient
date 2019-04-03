@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3FBE3E6F2253F97E00AF87F1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E6E2253F97E00AF87F1 /* main.swift */; };
+		3FBE3E772253F9AB00AF87F1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E762253F9AB00AF87F1 /* HTTPMethod.swift */; };
+		3FBE3E792253FA0D00AF87F1 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E782253FA0D00AF87F1 /* APIRequest.swift */; };
+		3FBE3E7B2253FAD800AF87F1 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E7A2253FAD800AF87F1 /* APIResponse.swift */; };
+		3FBE3E7D2253FB3E00AF87F1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E7C2253FB3E00AF87F1 /* APIError.swift */; };
+		3FBE3E7F2253FC0D00AF87F1 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E7E2253FC0D00AF87F1 /* APIResult.swift */; };
+		3FBE3E812253FC4C00AF87F1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE3E802253FC4C00AF87F1 /* APIClient.swift */; };
+		44DD391F65A17CCB68F0F540 /* Pods_HTTPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243D6FE8A438B923624C9347 /* Pods_HTTPClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04D2BF71EE39DE8EC75CC729 /* Pods-HTTPClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTPClient.debug.xcconfig"; path = "Target Support Files/Pods-HTTPClient/Pods-HTTPClient.debug.xcconfig"; sourceTree = "<group>"; };
+		243D6FE8A438B923624C9347 /* Pods_HTTPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBE3E6B2253F97E00AF87F1 /* HTTPClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HTTPClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBE3E6E2253F97E00AF87F1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3FBE3E762253F9AB00AF87F1 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3FBE3E782253FA0D00AF87F1 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		3FBE3E7A2253FAD800AF87F1 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		3FBE3E7C2253FB3E00AF87F1 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3FBE3E7E2253FC0D00AF87F1 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		3FBE3E802253FC4C00AF87F1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C60D2C55A8E29F47326B8896 /* Pods-HTTPClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTPClient.release.xcconfig"; path = "Target Support Files/Pods-HTTPClient/Pods-HTTPClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +48,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DD391F65A17CCB68F0F540 /* Pods_HTTPClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9A0C132255309700BB7161 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3FBE3E762253F9AB00AF87F1 /* HTTPMethod.swift */,
+				3FBE3E782253FA0D00AF87F1 /* APIRequest.swift */,
+				3FBE3E7A2253FAD800AF87F1 /* APIResponse.swift */,
+				3FBE3E7E2253FC0D00AF87F1 /* APIResult.swift */,
+				3FBE3E7C2253FB3E00AF87F1 /* APIError.swift */,
+				3FBE3E802253FC4C00AF87F1 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		3FBE3E622253F97E00AF87F1 = {
 			isa = PBXGroup;
 			children = (
 				3FBE3E6D2253F97E00AF87F1 /* HTTPClient */,
 				3FBE3E6C2253F97E00AF87F1 /* Products */,
+				590F311248B551AA45CDDCC6 /* Pods */,
+				A8C3A75E1F7A7D071D36AD2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +89,27 @@
 		3FBE3E6D2253F97E00AF87F1 /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A0C132255309700BB7161 /* API */,
 				3FBE3E6E2253F97E00AF87F1 /* main.swift */,
 			);
 			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		590F311248B551AA45CDDCC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04D2BF71EE39DE8EC75CC729 /* Pods-HTTPClient.debug.xcconfig */,
+				C60D2C55A8E29F47326B8896 /* Pods-HTTPClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8C3A75E1F7A7D071D36AD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				243D6FE8A438B923624C9347 /* Pods_HTTPClient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FBE3E722253F97E00AF87F1 /* Build configuration list for PBXNativeTarget "HTTPClient" */;
 			buildPhases = (
+				AF95E116332C15F76993253B /* [CP] Check Pods Manifest.lock */,
 				3FBE3E672253F97E00AF87F1 /* Sources */,
 				3FBE3E682253F97E00AF87F1 /* Frameworks */,
 				3FBE3E692253F97E00AF87F1 /* CopyFiles */,
@@ -114,11 +165,42 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF95E116332C15F76993253B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTTPClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FBE3E672253F97E00AF87F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBE3E772253F9AB00AF87F1 /* HTTPMethod.swift in Sources */,
+				3FBE3E812253FC4C00AF87F1 /* APIClient.swift in Sources */,
+				3FBE3E7B2253FAD800AF87F1 /* APIResponse.swift in Sources */,
+				3FBE3E792253FA0D00AF87F1 /* APIRequest.swift in Sources */,
+				3FBE3E7F2253FC0D00AF87F1 /* APIResult.swift in Sources */,
+				3FBE3E7D2253FB3E00AF87F1 /* APIError.swift in Sources */,
 				3FBE3E6F2253F97E00AF87F1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,8 +325,10 @@
 		};
 		3FBE3E732253F97E00AF87F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D2BF71EE39DE8EC75CC729 /* Pods-HTTPClient.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -252,8 +336,10 @@
 		};
 		3FBE3E742253F97E00AF87F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60D2C55A8E29F47326B8896 /* Pods-HTTPClient.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
